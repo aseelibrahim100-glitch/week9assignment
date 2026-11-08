@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal Original Food Cart - Order Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Halal Original Food Cart</h1>
+        <p>Fresh halal food in Northeast Philadelphia</p>
+    </header>
+
+    <main>
+        <section class="about">
+            <img src="images/truck1.png" alt="Bright green Halal Original Food Cart with photos of chicken, lamb, falafel, and cheesesteaks on the side">
+            <h2>About Us</h2>
+            <p>Halal Original Food Cart serves hot halal meals with big portions and our famous red and white sauces.</p>
+            <p><strong>Food Type:</strong> Middle Eastern and Mediterranean food</p>
+            <p><strong>Location:</strong> 7258 Bustleton Ave, Philadelphia, PA 19149</p>
+        </section>
+
+        <section class="order">
+            <h2>Online Order Form</h2>
+            <p class="instructions">Fill out each part of the form below. Boxes that say (required) must be filled in. Click Place Order when you are done.</p>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <p>
+                        <label for="name">Full Name (required)</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email Address (required)</label><br>
+                        <input type="text" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number (required)</label><br>
+                        <input type="text" id="phone" name="phone" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Food Selection</legend>
+                    <p>Check the food you want to order.</p>
+                    <p class="menu-item">
+                        <input type="checkbox" id="chicken" name="food" value="chicken">
+                        <label for="chicken"><strong>Chicken over Rice - $10.00</strong><br>Grilled chicken on yellow rice with salad.</label>
+                    </p>
+                    <p class="menu-item">
+                        <input type="checkbox" id="lamb" name="food" value="lamb">
+                        <label for="lamb"><strong>Lamb over Rice - $11.00</strong><br>Lamb gyro meat on yellow rice with salad.</label>
+                    </p>
+                    <p class="menu-item">
+                        <input type="checkbox" id="combo" name="food" value="combo">
+                        <label for="combo"><strong>Combo Platter - $12.00</strong><br>Chicken and lamb on rice with salad.</label>
+                    </p>
+                    <p class="menu-item">
+                        <input type="checkbox" id="falafel" name="food" value="falafel">
+                        <label for="falafel"><strong>Falafel over Rice - $9.00</strong><br>Crispy falafel on yellow rice with salad.</label>
+                    </p>
+                    <p class="menu-item">
+                        <input type="checkbox" id="cheesesteak" name="food" value="cheesesteak">
+                        <label for="cheesesteak"><strong>Philly Cheese Steak - $15.00</strong><br>Steak, cheese, and onions on a hoagie roll.</label>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Sauce Level</legend>
+                    <p>
+                        <input type="radio" id="regular-sauce" name="sauce-level" value="regular" checked>
+                        <label for="regular-sauce">Regular Sauce</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="light-sauce" name="sauce-level" value="light">
+                        <label for="light-sauce">Light Sauce</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="no-sauce" name="sauce-level" value="none">
+                        <label for="no-sauce">No Sauce</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <p>
+                        <input type="checkbox" id="white-sauce" name="extras" value="white-sauce">
+                        <label for="white-sauce">Extra White Sauce</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="red-sauce" name="extras" value="red-sauce">
+                        <label for="red-sauce">Extra Red Hot Sauce</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Drink and Special Instructions</legend>
+                    <p>
+                        <label for="drink">Choose a Drink</label><br>
+                        <select id="drink" name="drink">
+                            <option value="none">No Drink</option>
+                            <option value="coke">Coca-Cola</option>
+                            <option value="pepsi">Pepsi</option>
+                            <option value="ginger-ale">Ginger Ale</option>
+                            <option value="water">Water</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="special">Special Instructions</label><br>
+                        <textarea id="special" name="special" rows="4"></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pickup Information</legend>
+                    <p>
+                        <label for="pickup-time">Pickup Date and Time (required)</label><br>
+                        <input type="text" id="pickup-time" name="pickup-time" required>
+                    </p>
+                    <p>
+                        <label for="pickup-name">Pickup Name (if different from your name)</label><br>
+                        <input type="text" id="pickup-name" name="pickup-name">
+                    </p>
+                    <p>
+                        <label for="pickup-notes">Pickup Instructions</label><br>
+                        <textarea id="pickup-notes" name="pickup-notes" rows="3"></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Place Order">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aseel Ibrahim. Created for CIS 130 Web Design.</p>
+        <p><a href="https://github.com/aseelibrahim100-glitch">My GitHub profile</a></p>
+    </footer>
+</body>
+</html>
