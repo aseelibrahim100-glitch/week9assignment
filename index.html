@@ -117,12 +117,16 @@
                 <fieldset>
                     <legend>Pickup Information</legend>
                     <p>
+                        <label for="pickup-date">Pickup Date (required)</label><br>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                    </p>
+                    <p>
                         <label for="pickup-time">Pickup Time (required)</label><br>
                         <input type="time" id="pickup-time" name="pickup-time" required>
                     </p>
                     <p>
-                       <label for="pickup-time">Pickup Time (required)</label><br>
-                        <input type="time" id="pickup-time" name="pickup-time" required>
+                        <label for="pickup-name">Pickup Name (if different from your name)</label><br>
+                        <input type="text" id="pickup-name" name="pickup-name">
                     </p>
                     <p>
                         <label for="pickup-notes">Pickup Instructions</label><br>
